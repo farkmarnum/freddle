@@ -27,6 +27,7 @@ import {
   unicodeLength,
 } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
+import { useVhUnits } from './lib/hooks'
 import {
   loadGameStateFromLocalStorage,
   saveGameStateToLocalStorage,
@@ -41,6 +42,8 @@ import { useAlert } from './context/AlertContext'
 import { Navbar } from './components/navbar/Navbar'
 
 function App() {
+  useVhUnits()
+
   const prefersDarkMode = window.matchMedia(
     '(prefers-color-scheme: dark)'
   ).matches
