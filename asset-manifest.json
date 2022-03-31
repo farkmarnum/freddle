@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/freddle/static/css/main.4a152b01.css",
-    "main.js": "/freddle/static/js/main.eea67d79.js",
+    "main.css": "/freddle/static/css/main.1e706c65.css",
+    "main.js": "/freddle/static/js/main.575d9c62.js",
     "static/js/787.6484fadc.chunk.js": "/freddle/static/js/787.6484fadc.chunk.js",
     "index.html": "/freddle/index.html",
-    "main.4a152b01.css.map": "/freddle/static/css/main.4a152b01.css.map",
-    "main.eea67d79.js.map": "/freddle/static/js/main.eea67d79.js.map",
+    "main.1e706c65.css.map": "/freddle/static/css/main.1e706c65.css.map",
+    "main.575d9c62.js.map": "/freddle/static/js/main.575d9c62.js.map",
     "787.6484fadc.chunk.js.map": "/freddle/static/js/787.6484fadc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a152b01.css",
-    "static/js/main.eea67d79.js"
+    "static/css/main.1e706c65.css",
+    "static/js/main.575d9c62.js"
   ]
 }
