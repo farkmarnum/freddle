@@ -2,7 +2,7 @@
   "name": "freddle",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://farkmarnum.github.io/freddle",
+  "homepage": "http://freddle.com",
   "dependencies": {
     "@headlessui/react": "^1.4.2",
     "@heroicons/react": "^1.0.5",
@@ -33,7 +33,8 @@
     "test": "react-scripts test",
     "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "gh-deploy": "gh-pages -d build",
+    "deploy": "aws s3 sync ./build s3://freddle.com --delete --exclude \"*.DS_Store*\""
   },
   "eslintConfig": {
     "extends": [

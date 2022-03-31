@@ -10,10 +10,13 @@ This a fork of [react-wordle](https://github.com/cwackerfuss/react-wordle), modi
 
 ### To Run Locally:
 
-Clone the repository and perform the following command line actions:
-
 ```bash
-$> cd react-wordle
 $> npm install
 $> npm run start
+```
+
+### To Deploy:
+
+```
+npm run deploy # deploys to S3
 ```
