@@ -59,13 +59,15 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
         This is an open source version of the word guessing game we all know and
-        love -{' '}
+        love — plus it's about Fred instead —{' '}
         <a
-          href="https://github.com/cwackerfuss/react-wordle"
+          href="https://github.com/farkmarnum/freddle"
           className="underline font-bold"
+          target="_blank"
+          rel="noreferrer"
         >
           check out the code here
-        </a>{' '}
+        </a>.
       </p>
     </BaseModal>
   )
