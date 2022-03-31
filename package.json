@@ -32,9 +32,11 @@
     "start": "react-scripts start",
     "test": "react-scripts test",
     "prepare": "husky install",
+    "invalidate-cache": "aws cloudfront create-invalidation --distribution-id E1O4RLUQXPC3KU --paths \"/index.html\"",
+    "deploy-s3": "aws s3 sync ./build s3://freddle.com --delete --exclude \"*.DS_Store*\"",
     "predeploy": "npm run build",
-    "gh-deploy": "gh-pages -d build",
-    "deploy": "aws s3 sync ./build s3://freddle.com --delete --exclude \"*.DS_Store*\""
+    "deploy": "npm run deploy-s3",
+    "postdeploy": "npm run invalidate-cache"
   },
   "eslintConfig": {
     "extends": [
