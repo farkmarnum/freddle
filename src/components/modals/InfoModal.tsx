@@ -34,7 +34,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="L"
+          value="D"
           status="present"
         />
         <Cell value="O" />
