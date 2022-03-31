@@ -67,7 +67,8 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
           rel="noreferrer"
         >
           check out the code here
-        </a>.
+        </a>
+        .
       </p>
     </BaseModal>
   )
