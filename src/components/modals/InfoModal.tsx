@@ -55,7 +55,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-6 italic text-sm text-gray-500 dark:text-gray-300">
-        It's wordle but it's just about my cat Fred.
+        It's like Wordle, but it's just about my cat Fred.
       </p>
     </BaseModal>
   )

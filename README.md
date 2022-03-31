@@ -11,8 +11,8 @@ This a fork of [react-wordle](https://github.com/cwackerfuss/react-wordle), modi
 ### To Run Locally:
 
 ```bash
-$> npm install
-$> npm run start
+npm install
+npm run start
 ```
 
 ### To Deploy:
