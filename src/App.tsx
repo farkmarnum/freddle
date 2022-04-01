@@ -25,6 +25,7 @@ import {
   solution,
   findFirstUnusedReveal,
   unicodeLength,
+  solutionIndex,
 } from './lib/words'
 import { addStatsForCompletedGame, loadStats } from './lib/stats'
 import { useVhUnits } from './lib/hooks'
@@ -70,7 +71,10 @@ function App() {
   const [isRevealing, setIsRevealing] = useState(false)
   const [guesses, setGuesses] = useState<string[]>(() => {
     const loaded = loadGameStateFromLocalStorage()
-    if (loaded?.solution !== solution) {
+    if (
+      loaded?.solution !== solution ||
+      loaded?.solutionIndex !== solutionIndex
+    ) {
       return []
     }
     const gameWasWon = loaded.guesses.includes(solution)
@@ -142,7 +146,7 @@ function App() {
   }
 
   useEffect(() => {
-    saveGameStateToLocalStorage({ guesses, solution })
+    saveGameStateToLocalStorage({ guesses, solution, solutionIndex })
   }, [guesses])
 
   useEffect(() => {
